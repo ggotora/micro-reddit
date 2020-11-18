@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.integer :upvotes
       t.integer :downvotes
       t.references :user, foreign_key: true
+      
 
       t.timestamps
     end
